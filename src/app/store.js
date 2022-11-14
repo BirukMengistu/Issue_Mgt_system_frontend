@@ -1,8 +1,17 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore  } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
+import userReducers from '../features/user/usersSlices';
+import  caseReducer from '../features/case/casesSlices';
+import  addressReducers from '../features/user/addressSlices'
 
-export const store = configureStore({
+
+const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    case: caseReducer,
+    user: userReducers,
+    address: addressReducers,
+    counterReducer
   },
 });
+
+export default store 
