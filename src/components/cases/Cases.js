@@ -7,15 +7,23 @@ export const Cases = () => {
    
     const cases = useSelector(selectAllCases);
     const orderedPosts = cases.slice().sort((a, b) => b.ceatedAt.localeCompare(a.ceatedAt))
-     console.log('cases-component',cases)
+    
   return (
     <div className='post'>
-        <h2>New Case</h2>
+        <table>
+        <caption>List of Registerd Cases</caption>
+        <tr>
+        <th>Name</th>
+        <th>Created At</th>
+        <th>Case Description</th>
+        </tr>
           {
             orderedPosts.map((tempcase,index)=>
               <CaseCard key = {index} tempcase ={tempcase}/>
             )
           }
+
+      </table> 
     </div>
   )
 }

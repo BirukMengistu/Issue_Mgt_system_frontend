@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import {addNewCase } from "../../features/case/casesSlices";
-import { selectAllCases   } from "../../features/case/casesSlices";
+import AssignCase from "./AssignCase";
+
 
 const AddCase = () => {
     const dispatch = useDispatch()
@@ -42,6 +44,8 @@ const AddCase = () => {
           
         }
     }
+
+    
   
 
     return (
@@ -82,6 +86,12 @@ const AddCase = () => {
                     disabled = {!checkInput}
                 >Save Case</button>
             </form>
+            <button
+                  className="btn btn-dark m-4"
+                    type="button"
+                    onClick={()=> <Link to='/modifiy-case' element={<AssignCase/>} />}
+                   
+                > Asign Case to User </button>
         </section>
     )
 }

@@ -60,6 +60,21 @@ section {
   margin-top: 1em;
   color: rgb(23, 23, 24);
 }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #e3c310;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
 article {
   margin: 0.5em 0.5em 0.5em 0;

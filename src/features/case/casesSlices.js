@@ -3,7 +3,7 @@ import axios from "axios";
 
 const CASE_URL = 'https://localhost:7052/api/Case'
 
-
+const initialState = []
 export const fetchCases = createAsyncThunk('cases/fetchCases', async () => {
     const response = await axios.get(CASE_URL);
     console.log(response.data);
@@ -20,8 +20,7 @@ export const addNewCase = createAsyncThunk('cases/addNewCase', async (initialCas
 
 const caseSlices = createSlice({
     name: 'cases',
-    initialState :{
-    },
+    initialState ,
     reducers: {
         CaseAdded: {
             reducer(state, action) {
@@ -34,6 +33,11 @@ const caseSlices = createSlice({
                      console.log('action payload', action.payload)
                      return action.payload;
                  })
+        builder.addCase(addNewCase.fulfilled, (state, action) => {
+                    state.status = 'succeeded'
+                   state.user.push(action.payload);
+                })
+
       
     }})
 

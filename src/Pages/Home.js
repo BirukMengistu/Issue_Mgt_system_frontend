@@ -4,6 +4,7 @@ import AddUser from '../components/users/AddUser';
 import UserList from '../components/users/Userlist'
 import { withRouter, useHistory } from 'react-router-dom';
 import User from './User';
+import AddCase from '../components/cases/AddCase';
 
 
 /**
@@ -12,20 +13,20 @@ import User from './User';
 **/
 
  const Home  = (props) => {
-    const [toggleShow, setToggleShow] = React.useState(false)
+    const [toggleShow, setToggleShow] = React.useState(true)
     
 
     return(
    <article>
 
        {
-        toggleShow? <Cases/> : <AddUser/>
+        toggleShow ? <Cases/> : <AddCase/>
        }
       <div className='post'>
           <button className='cta-button' onClick={() => 
              setToggleShow(!toggleShow)
              }>
-              Case Manage
+              Add Case
           </button>
       </div>
       

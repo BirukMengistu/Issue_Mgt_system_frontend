@@ -5,6 +5,9 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import User from './Pages/User';
 import AddCase from './components/cases/AddCase';
+import ManageCases from './components/cases/ManageCases';
+import CompletedCase from './components/cases/CompletedCase';
+import AssignCase from './components/cases/AssignCase';
 
 
 
@@ -19,11 +22,13 @@ function App() {
           <Routes>
              <Route path="/" element={<Home/>} />
              <Route path="/user" element={<User/>}/>
-             
+             <Route path="/case-status" element={<ManageCases />}/>
+             <Route path="/case-resolved" element={<CompletedCase />}/>
              <Route path="/add-issue" element={<AddCase/>}/>
+             <Route path="/modifiy-case" element={<AssignCase />}/>
           </Routes>
        </main>
-         </Suspense>{}
+         </Suspense>
       </Router> 
   );
 }

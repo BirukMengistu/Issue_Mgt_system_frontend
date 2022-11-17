@@ -39,9 +39,7 @@ const usersSlice = createSlice({
            
          builder.addCase(addNewUser.fulfilled, (state, action) => {
             state.status = 'succeeded'
-            // Adding date and reactions
-            // Add any fetched posts to the array
-           state.user.push(action.payload);
+            state.user.push(action.payload);
         })
     }})
 

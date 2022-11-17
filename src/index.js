@@ -6,6 +6,7 @@ import App from './App';
 import './index.css';
 import { fetchUsers } from "./features/user/usersSlices";
 import { fetchCases } from "./features/case/casesSlices";
+import { fetchCaseStatus } from './features/case/casestatusSlices'
 import {  fetchAddress } from "./features/user/addressSlices"
 
 const container = document.getElementById('root');
@@ -13,6 +14,7 @@ const root = createRoot(container);
 store.dispatch(fetchUsers())
 store.dispatch(fetchCases())
 store.dispatch(fetchAddress())
+store.dispatch(fetchCaseStatus())
 root.render(
 
   <React.StrictMode>

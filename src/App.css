@@ -10,7 +10,6 @@ body {
 nav {
   text-decoration: none;
   margin: 0;
-  width: 100%;
   height: 100px;
   background-color: gold;
   display: flex;
@@ -144,3 +143,4 @@ textarea {
     transform: rotate(360deg);
   }
 }
+
