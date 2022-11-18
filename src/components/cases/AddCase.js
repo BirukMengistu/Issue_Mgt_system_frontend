@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
 import {addNewCase } from "../../features/case/casesSlices";
-import AssignCase from "./AssignCase";
+
 
 
 const AddCase = () => {
@@ -45,7 +45,9 @@ const AddCase = () => {
         }
     }
 
-    
+    function handleClick(myLink){
+        window.location.href=myLink;
+      }
   
 
     return (
@@ -89,7 +91,8 @@ const AddCase = () => {
             <button
                   className="btn btn-dark m-4"
                     type="button"
-                    onClick={()=> <Link to='/modifiy-case' element={<AssignCase/>} />}
+
+                    onClick={()=>handleClick('/modifiy-case')}
                    
                 > Asign Case to User </button>
         </section>

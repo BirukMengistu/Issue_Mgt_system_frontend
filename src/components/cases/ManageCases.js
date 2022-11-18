@@ -17,7 +17,7 @@ const TCases =({asscase}) => {
     return(
          <tr>
            <td> {asscase.id}</td>
-           <td> {(asscase.status===2)? "Completed" :"Not Processed"}</td>
+           <td className={(asscase.status===2)?"Completed":"Not-Processed"}> {(asscase.status===2)? "Completed" :"Not-Processed"}</td>
           <td>{date}</td>      
         </tr>
        )  

@@ -71,7 +71,8 @@ td, th {
   text-align: left;
   padding: 8px;
 }
-
+.Completed {  color: green }
+.Not-Processed { color: blue }
 tr:nth-child(even) {
   background-color: #dddddd;
 }
