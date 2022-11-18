@@ -48,9 +48,15 @@ const AssignCase =() =>{
        
         if (checkInput) {
             try{
-              
+               const params={
+                userId:Number(userId),
+                caseId:Number(caseId),
+                status:Number(status),
+                modified:modified,
+                created:created
+               }
                 setAddRequestStatus('pending')
-                dispatch(assignNewCaseUser({userId, caseId,status , modified ,created}))
+                dispatch(assignNewCaseUser(params))
                     setUserId('')
                     setCaseId('')
                     setStatus('') 
@@ -75,23 +81,24 @@ const AssignCase =() =>{
         <section className="border m-4 text-center p-4 shadow">
             <h2>Add a New Case</h2>
             <form >
-              
-               
+                           
                <label htmlFor="postContent">User Id:</label>
                     <select id="userAddress " value={userId} onChange={onuserIdChanged}>
-                   <option value=''></option>
+                   <option value='' onKeyDown={(e) => e.preventDefault()}></option>
                    {usersOptions}
                 </select>  
 
                 <label htmlFor="postContent">Case Id:</label>
                     <select id="userAddress " value={caseId} onChange={oncaseIdChanged}>
-                   <option value=''></option>
+                   <option value=''
+                    onKeyDown={(e) => e.preventDefault()}></option>
                    {CaseOptions}
                 </select> 
 
                 <label htmlFor="postContent">Case Status:</label>
                     <select id="userAddress " value={status} onChange={onstatusChanged}>
-                   <option value=''></option>
+                   <option value=''
+                    onKeyDown={(e) => e.preventDefault()}></option>
                  
                    {statu_value}
                 </select>  

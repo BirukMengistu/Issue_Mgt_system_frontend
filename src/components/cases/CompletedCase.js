@@ -27,7 +27,8 @@ const TCasestwo =({asscase}) => {
     
     const assignCases = useSelector(selectAllAssginCases) 
     const completedcase = assignCases.filter(casetemp=> casetemp.status===2)
-    
+    const orderedPosts = completedcase.slice().sort((a, b) => b.created.localeCompare(a.created))
+
   return(
     <table>
            <tr>
@@ -35,7 +36,7 @@ const TCasestwo =({asscase}) => {
              <th>Case status</th>
              <th>Modfied At</th>
            </tr>
-           { completedcase.map((asscase,index) => 
+           { orderedPosts.map((asscase,index) => 
               <TCasestwo asscase={asscase} key={index} />
              )}
      </table>

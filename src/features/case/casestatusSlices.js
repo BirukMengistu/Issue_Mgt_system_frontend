@@ -13,8 +13,10 @@ export const fetchCaseStatus = createAsyncThunk('caseStatus/fetchCaseStatus', as
 
 
 
-export const assignNewCaseUser = createAsyncThunk('caseStatus/AssignCaseUser', async (initialCase) => {
-    const response = await axios.post(ASSIGN_CASE_URL, initialCase)
+export const assignNewCaseUser = createAsyncThunk('caseStatus/assignCaseUser', async (initialCase) => {
+    const response = await axios.post(ASSIGN_CASE_URL, initialCase,{headers:{
+        "Content-Type": "application/json"}
+    })
     return response.data
 })
 
