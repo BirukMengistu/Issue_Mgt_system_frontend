@@ -41,13 +41,16 @@ select {
   border-radius: 0.2rem;
 }
 button{
-  background-color: gold;
-  color: black;
+  background-color: rgb(17, 17, 17);
+  color: rgb(244, 252, 253);
+  padding: 0.5rem 0.8rem;
+  align-content: center;
+  width:60%;
   cursor: pointer;
 }
 button:hover{
   cursor: pointer;
-  color: blue;
+  color: rgba(255, 234, 0, 0.837);
   transform: translate(2ch, 0.1mm);
 }
 .cta-button{
@@ -105,6 +108,7 @@ p {
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .postCredit {

@@ -78,7 +78,8 @@ const AssignCase =() =>{
     }
 
     return (
-        <section className="border m-4 text-center p-4 shadow">
+        <article>
+            
             <h2>Add a New Case</h2>
             <form >
                            
@@ -128,7 +129,9 @@ const AssignCase =() =>{
                 >Update Case </button>
             </form>
            
-        </section>
+        </article>
+        
+      
     )
 }
 

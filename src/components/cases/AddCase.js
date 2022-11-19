@@ -51,8 +51,8 @@ const AddCase = () => {
   
 
     return (
-        <section className="border m-4 text-center p-4 shadow">
-            <h2>Add a New Case</h2>
+        <article>
+                        <h2>Add a New Case</h2>
             <form>
               
               
@@ -87,13 +87,19 @@ const AddCase = () => {
                     disabled = {!checkInput}
                 >Save Case</button>
             </form>
+            <form>
             <button
                   className="btn btn-dark m-4"
                     type="button"
                     onClick={()=>handleClick('/modifiy-case')}
                    
                 > Asign Case to User </button>
-        </section>
+            </form>
+           
+      
+        </article>
+       
+
     )
 }
 

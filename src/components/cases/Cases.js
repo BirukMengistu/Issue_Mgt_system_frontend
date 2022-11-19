@@ -9,6 +9,7 @@ export const Cases = () => {
     const orderedPosts = cases.slice().sort((a, b) => b.ceatedAt.localeCompare(a.ceatedAt))
     
   return (
+   
     <div className='post'>
         <table>
         <caption>List of Registerd Cases</caption>
