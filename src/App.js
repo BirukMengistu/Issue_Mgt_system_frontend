@@ -8,6 +8,7 @@ import AddCase from './components/cases/AddCase';
 import ManageCases from './components/cases/ManageCases';
 import CompletedCase from './components/cases/CompletedCase';
 import AssignCase from './components/cases/AssignCase';
+import CaseDetails from './components/cases/CaseDetails';
 
 
 
@@ -26,6 +27,8 @@ function App() {
              <Route path="/case-resolved" element={<CompletedCase />}/>
              <Route path="/add-issue" element={<AddCase/>}/>
              <Route path="/modifiy-case" element={<AssignCase />}/>
+             <Route path="/case-details" element={<CaseDetails />}/>
+             <Route path="/case-details/:id" element={<CaseDetails />}/>
           </Routes>
        </main>
          </Suspense>

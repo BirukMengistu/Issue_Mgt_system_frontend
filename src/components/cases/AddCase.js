@@ -61,7 +61,6 @@ const AddCase = () => {
                     id="postContent"
                     name="postContent"
                     value={title}
-
                     onChange={ontitleChanged}
                 />
              
@@ -91,7 +90,6 @@ const AddCase = () => {
             <button
                   className="btn btn-dark m-4"
                     type="button"
-
                     onClick={()=>handleClick('/modifiy-case')}
                    
                 > Asign Case to User </button>

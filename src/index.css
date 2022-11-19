@@ -43,6 +43,12 @@ select {
 button{
   background-color: gold;
   color: black;
+  cursor: pointer;
+}
+button:hover{
+  cursor: pointer;
+  color: blue;
+  transform: translate(2ch, 0.1mm);
 }
 .cta-button{
   border: none;
@@ -112,3 +118,4 @@ form {
   color: whitesmoke;
   font-size: 1rem;
 }
+

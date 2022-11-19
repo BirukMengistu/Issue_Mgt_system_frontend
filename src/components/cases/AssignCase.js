@@ -83,7 +83,7 @@ const AssignCase =() =>{
             <form >
                            
                <label htmlFor="postContent">User Id:</label>
-                    <select id="userAddress " value={userId} onChange={onuserIdChanged}>
+                    <select id="post " value={userId} onChange={onuserIdChanged}>
                    <option value='' onKeyDown={(e) => e.preventDefault()}></option>
                    {usersOptions}
                 </select>  
@@ -93,7 +93,7 @@ const AssignCase =() =>{
                    <option value=''
                     onKeyDown={(e) => e.preventDefault()}></option>
                    {CaseOptions}
-                </select> 
+                  </select> 
 
                 <label htmlFor="postContent">Case Status:</label>
                     <select id="userAddress " value={status} onChange={onstatusChanged}>
