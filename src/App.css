@@ -144,3 +144,14 @@ textarea {
   }
 }
 
+@media only screen and (min-width: 400px) {
+  body{
+    width:100%;
+  }
+  table {
+    width: 80%;
+  }
+}
+/* 394 */
+
+
