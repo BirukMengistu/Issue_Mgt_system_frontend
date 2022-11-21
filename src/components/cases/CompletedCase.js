@@ -20,7 +20,7 @@ const TCasestwo =({asscase}) => {
            <td> {asscase.id}</td>
            <td className={(asscase.status===2)?"Completed":"Not-Processed"}> {(asscase.status===2)? "Completed" :"Not Processed"}</td>
           <td>{date}</td>  
-          <td> <Link to ={`/case-details/${asscase.userId}`}> Read+ </Link></td>         
+          <td> <Link to ={`/case-details/${asscase.id}`}> Read+ </Link></td>         
         </tr>
        )  
 
