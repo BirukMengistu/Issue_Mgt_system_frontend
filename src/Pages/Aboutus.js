@@ -18,13 +18,13 @@ export const Aboutus = (props) => {
                                 <span className="bg animated fadeInDown">Looking LIA</span>
                                 <h1>Biruk<br/> Mengistu</h1>
                                  <p>Frontend developer student in EC-Utbliding.</p>
-                                 <p>Interested in Web technologies like HTML5, CSS3, JavaScript, PHP, MySQL, etc.</p>
+                                 <p>Interested in Web technologies like VueJs , ReactJs, Nodejs, etc.</p>
                                 <div className="button">
-                                    <Link to="/">Linkden</Link><Link className="cart-btn" to="#"><i className="cart-icon ion-bag"></i>Github</Link>
+                                    <Link to="/home">Linkden</Link><Link className="cart-btn" to="/home"><i className="cart-icon ion-bag"></i>Github</Link>
                                 </div>
                                 
                             </div>
-                            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGTtjMf1wofUA/profile-displayphoto-shrink_200_200/0/1625488513946?e=1672272000&v=beta&t=EFJ4pirSjoxn-za0TaFxOzScZxjKlqB6-Cb2nSNqr7o" width="200px" className="animated fadeInRight" />
+                            <img alt='profile' src="https://media-exp1.licdn.com/dms/image/C4E03AQGTtjMf1wofUA/profile-displayphoto-shrink_200_200/0/1625488513946?e=1672272000&v=beta&t=EFJ4pirSjoxn-za0TaFxOzScZxjKlqB6-Cb2nSNqr7o" width="200px" className="animated fadeInRight" />
                         </div>
                       
                     </div>
