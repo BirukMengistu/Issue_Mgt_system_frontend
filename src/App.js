@@ -9,6 +9,7 @@ import ManageCases from './components/cases/ManageCases';
 import CompletedCase from './components/cases/CompletedCase';
 import AssignCase from './components/cases/AssignCase';
 import CaseDetails from './components/cases/CaseDetails';
+import { Aboutus } from './Pages/Aboutus';
 
 
 
@@ -29,6 +30,7 @@ function App() {
              <Route path="/modifiy-case" element={<AssignCase />}/>
              <Route path="/case-details" element={<CaseDetails />}/>
              <Route path="/case-details/:id" element={<CaseDetails />}/>
+             <Route path="/aboutus" element={<Aboutus />}/>
           </Routes>
        </main>
          </Suspense>

@@ -19,11 +19,20 @@ export const MainNavbar = () => {
     <div className="topnav" id="myTopnav">
       <Link to="/" className="active"> Home </Link>
       <Link to="/user" > User list </Link>
-      <Link to="/add-issue"> AddIssue </Link>
-      <Link to="/modifiy-case"> Modifiy-Case </Link>
-      <Link to="/case-status"> CaseStatus </Link>
-      <Link to="/case-resolved"> Completed-Case </Link>
+          <div class="dropdown">
+              <button class="dropbtn">Cases 
+                <div><i class="fa fa-caret-down"></i></div>
+              </button>
+                  <div class="dropdown-content">
+                        <Link to="/add-issue"> AddCase </Link>
+                        <Link to="/modifiy-case"> Modifiy-Case </Link>
+                        <Link to="/case-status"> CaseStatus </Link>
+                        <Link to="/case-resolved"> Completed-Case </Link>
+                  </div>
+              
+          </div>
 
+        <Link to="/aboutus"> About-us </Link>
       <div>
       <Link  className="icon" onClick={myFunction}> &#9776;</Link>
       </div>
